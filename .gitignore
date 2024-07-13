@@ -1,0 +1,9 @@
+.idea
+includes/openssl
+includes/oqs
+libs/*.a
+liboqs
+openssl
+oqs-provider
+
+cmake-build-*

@@ -1,0 +1,12 @@
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl.git
+	branch = openssl-3.3
+[submodule "oqs-provider"]
+	path = oqs-provider
+	url = https://github.com/open-quantum-safe/oqs-provider.git
+	branch = main
+[submodule "liboqs"]
+	path = liboqs
+	url = https://github.com/open-quantum-safe/liboqs.git
+	branch = main
