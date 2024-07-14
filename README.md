@@ -13,8 +13,9 @@
 git clone https://github.com/openssl/openssl.git
 cd openssl
 ./config no-shared no-docs
+make -j8
 ```
-When done, there are two files libcrypto.a and libssl.a in the current directory, hope you found it!
+`8` is number of your CPU cores, when it done, there are two files libcrypto.a and libssl.a in the current directory, hope you found it!
 
 #### LibOQS
 
