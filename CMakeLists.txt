@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.28)
 project(AIOOpenSSL)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -12,5 +12,4 @@ set(OQS_PROVIDER_LIB oqsprovider)
 
 add_executable(AIOOpenSSL main.cpp)
 
-# Using group to resolve circular dependencies, prevent undefined symbols for the libraries
-target_link_libraries(AIOOpenSSL PRIVATE "-Wl,--start-group" ${OPENSSL_LIB} ${OQS_PROVIDER_LIB} ${OQS_LIB} "-Wl,--end-group" pthread)
+target_link_libraries(AIOOpenSSL PRIVATE ${OQS_PROVIDER_LIB} ${OQS_LIB} ${OPENSSL_LIB} pthread)
