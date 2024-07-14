@@ -4,3 +4,4 @@ includes/oqs
 libs/*.a
 build
 cmake-build-*
+build*
